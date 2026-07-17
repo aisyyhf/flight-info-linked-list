@@ -1,69 +1,69 @@
 # Flight Info Linked List (C++)
 
-Program C++ sederhana untuk mengelola data penerbangan menggunakan struktur data Singly Linked List (SLL). Dibuat sebagai tugas mata kuliah Struktur Data, dengan operasi dasar linked list seperti insert, delete, search, dan sort pada studi kasus data penerbangan.
+A simple C++ program for managing flight data using a Singly Linked List (SLL). Built as a Data Structures course assignment, covering basic linked list operations like insert, delete, search, and sort applied to a flight data case.
 
-## Fitur
+## Features
 
-Setiap data penerbangan (`infotype`) menyimpan:
-- `flightNumber`: Nomor penerbangan
-- `departureCity`: Kota keberangkatan
-- `arrivalCity`: Kota tujuan
-- `arrivalTime`: Waktu kedatangan
+Each flight record (`infotype`) stores:
+- `flightNumber`: Flight number
+- `departureCity`: Departure city
+- `arrivalCity`: Arrival city
+- `arrivalTime`: Arrival time
 
-Operasi linked list yang diimplementasikan:
+Linked list operations implemented:
 
-| Fungsi | Deskripsi |
+| Function | Description |
 |---|---|
-| `Create_List` | Membuat list kosong |
-| `New_Elemen` | Membuat node baru dari data penerbangan |
-| `Insert_First` | Menyisipkan node di awal list |
-| `Insert_Last` | Menyisipkan node di akhir list |
-| `Insert_After` | Menyisipkan node setelah node tertentu |
-| `Delete_First` | Menghapus node pertama |
-| `Delete_Last` | Menghapus node terakhir |
-| `Delete_After` | Menghapus node setelah node tertentu |
-| `SearchByFlightNumber` | Mencari penerbangan berdasarkan nomor penerbangan |
-| `SortByFlightNumber` | Mengurutkan list berdasarkan nomor penerbangan |
-| `Show` | Menampilkan seluruh data dalam list |
+| `Create_List` | Creates an empty list |
+| `New_Elemen` | Creates a new node from flight data |
+| `Insert_First` | Inserts a node at the beginning of the list |
+| `Insert_Last` | Inserts a node at the end of the list |
+| `Insert_After` | Inserts a node after a given node |
+| `Delete_First` | Removes the first node |
+| `Delete_Last` | Removes the last node |
+| `Delete_After` | Removes the node after a given node |
+| `SearchByFlightNumber` | Searches for a flight by flight number |
+| `SortByFlightNumber` | Sorts the list by flight number |
+| `Show` | Displays all records in the list |
 
-## Struktur Project
+## Project Structure
 
 ```
 sll/
-├── main.cpp        (program utama, input data dan pemanggilan fungsi list)
-├── SLL.cpp         (implementasi seluruh operasi linked list)
-├── SLL.h           (deklarasi struct dan prototipe fungsi)
-├── sll.cbp         (project file Code::Blocks)
+├── main.cpp        (main program, handles input and calls list functions)
+├── SLL.cpp         (implementation of all linked list operations)
+├── SLL.h           (struct declarations and function prototypes)
+├── sll.cbp         (Code::Blocks project file)
 └── sll.depend
 ```
 
-## Cara Menjalankan
+## How to Run
 
-### Menggunakan Code::Blocks
-1. Buka file `sll.cbp` di Code::Blocks.
-2. Build & Run (`F9`).
+### Using Code::Blocks
+1. Open `sll.cbp` in Code::Blocks.
+2. Build and run (`F9`).
 
-### Menggunakan g++ (terminal)
+### Using g++ (terminal)
 ```bash
 g++ main.cpp SLL.cpp -o sll
 ./sll
 ```
 
-## Contoh Alur Program
+## Program Flow
 
-1. Input data penerbangan 1 → disisipkan di awal list (`Insert_First`).
-2. Input data penerbangan 2 → disisipkan di akhir list (`Insert_Last`).
-3. Tampilkan seluruh isi list.
-4. Cari penerbangan berdasarkan nomor penerbangan, lalu hapus node setelahnya.
-5. Urutkan list berdasarkan nomor penerbangan.
-6. Tampilkan list setelah diurutkan.
+1. Enter flight 1 data, inserted at the beginning of the list (`Insert_First`).
+2. Enter flight 2 data, inserted at the end of the list (`Insert_Last`).
+3. Display all records in the list.
+4. Search for a flight by flight number, then delete the node after it.
+5. Sort the list by flight number.
+6. Display the sorted list.
 
-## Teknologi
+## Tech Stack
 
-- **Bahasa:** C++
-- **Struktur Data:** Singly Linked List
-- **IDE:** Code::Blocks
+- Language: C++
+- Data Structure: Singly Linked List
+- IDE: Code::Blocks
 
 ## Author
 
-Dibuat sebagai tugas kuliah, implementasi Singly Linked List untuk manajemen data penerbangan.
+Built as a course assignment implementing a Singly Linked List for flight data management.
