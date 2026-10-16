@@ -1,69 +1,35 @@
-# Flight Info Linked List (C++)
+# Flight Info Linked List
 
-A simple C++ program for managing flight data using a Singly Linked List (SLL). Built as a Data Structures course assignment, covering basic linked list operations like insert, delete, search, and sort applied to a flight data case.
+A C++ program for managing flight data with a singly linked list. This was an assignment for a data structures course.
+
+Each flight stores a flight number, departure city, arrival city, and arrival time.
 
 ## Features
 
-Each flight record (`infotype`) stores:
-- `flightNumber`: Flight number
-- `departureCity`: Departure city
-- `arrivalCity`: Arrival city
-- `arrivalTime`: Arrival time
+- Insert a flight at the beginning, at the end, or after a given flight
+- Delete the first, last, or a specific flight
+- Search for a flight by flight number
+- Sort flights by flight number
+- Show all flights
 
-Linked list operations implemented:
+## How to run
 
-| Function | Description |
-|---|---|
-| `Create_List` | Creates an empty list |
-| `New_Elemen` | Creates a new node from flight data |
-| `Insert_First` | Inserts a node at the beginning of the list |
-| `Insert_Last` | Inserts a node at the end of the list |
-| `Insert_After` | Inserts a node after a given node |
-| `Delete_First` | Removes the first node |
-| `Delete_Last` | Removes the last node |
-| `Delete_After` | Removes the node after a given node |
-| `SearchByFlightNumber` | Searches for a flight by flight number |
-| `SortByFlightNumber` | Sorts the list by flight number |
-| `Show` | Displays all records in the list |
-
-## Project Structure
-
-```
-sll/
-├── main.cpp        (main program, handles input and calls list functions)
-├── SLL.cpp         (implementation of all linked list operations)
-├── SLL.h           (struct declarations and function prototypes)
-├── sll.cbp         (Code::Blocks project file)
-└── sll.depend
-```
-
-## How to Run
-
-### Using Code::Blocks
-1. Open `sll.cbp` in Code::Blocks.
-2. Build and run (`F9`).
-
-### Using g++ (terminal)
 ```bash
+cd "Tugas SLL/sll"
 g++ main.cpp SLL.cpp -o sll
 ./sll
 ```
 
-## Program Flow
+On Windows, run `sll` instead of `./sll`.
 
-1. Enter flight 1 data, inserted at the beginning of the list (`Insert_First`).
-2. Enter flight 2 data, inserted at the end of the list (`Insert_Last`).
-3. Display all records in the list.
-4. Search for a flight by flight number, then delete the node after it.
-5. Sort the list by flight number.
-6. Display the sorted list.
+## Files
 
-## Tech Stack
+- `SLL.h`: structs and function prototypes
+- `SLL.cpp`: linked list operations
+- `main.cpp`: input and program flow
 
-- Language: C++
-- Data Structure: Singly Linked List
-- IDE: Code::Blocks
+## What I learned
 
-## Author
-
-Built as a course assignment implementing a Singly Linked List for flight data management.
+- Building a singly linked list with pointers
+- Inserting and deleting nodes at different positions
+- Searching and sorting data inside a linked list
